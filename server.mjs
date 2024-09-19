@@ -19,6 +19,11 @@ app.put('/products/:id', (req, res) => {
   res.status(200).json({ message : `Put Request - updateing product detail of product ${productId}`, data: newItem });
 });
 
+app.delete('/products/:id', (req, res) => {
+    const productId = req.params.id;
+  res.status(200).json({ message : `Post Request - Posting product detail ${itemId}`});
+});
+
 app.listen(PORT, () => {
   console.log(`server is listening on http://localhost:${PORT}`);
 });
