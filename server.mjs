@@ -21,7 +21,7 @@ app.put('/products/:id', (req, res) => {
 
 app.delete('/products/:id', (req, res) => {
     const productId = req.params.id;
-  res.status(200).json({ message : `Post Request - Posting product detail ${productId}`});
+  res.status(200).json({ message : `Delete Request - Posting product detail ${productId}`});
 });
 
 app.listen(PORT, () => {
